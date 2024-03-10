@@ -3944,3 +3944,74 @@ input, select, textarea {
 			right: 0;
 		}
 		
+		.team-carousel-wrapper {
+			position: relative;
+		}
+		
+		.team-carousel {
+			display: flex;
+			overflow-x: hidden;
+			scroll-behavior: smooth;
+		}
+		
+		.carousel-prev, .carousel-next {
+			position: absolute;
+			top: 40%;
+			transform: translateY(-50%);
+			background-color: #5450501b;
+			color: white;
+			border: none;
+			cursor: pointer;
+			padding: 10px;
+			z-index: 100;
+			display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		height: 75px; /* Example height, adjust as needed */
+    		width: 30px; /* Example width, adjust as needed */
+    		font-size: 0.75em; /* Adjust the font size as needed */
+		}
+		
+		.carousel-prev {
+			left: 0;
+		}
+		
+		.carousel-next {
+			right: 0;
+		}
+		
+		.team-member {
+			flex: 0 0 100%;
+			text-align: center;
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+
+		h4 {
+			font-size: 1.25em;
+			text-align: center;
+			color: #fff8f8;
+		}	
+		h3 {
+			font-size: 2em;
+			text-align: center;
+			color: #000000;
+		}
+		h5 {
+			font-size: 1.25em;
+			text-align: center;
+			color: #fff8f8;
+		}
+		h6 {
+			font-size: 1.25em;
+			text-align: center;
+			color: #fff8f8;
+		}	
+		
+		.team-member img {
+			width: auto; /* Adjust based on your preference */
+			max-width: 100%; /* Ensure the image is not larger than the container */
+			height: auto; /* Maintain aspect ratio */
+			border-radius: 5%;
+			margin-bottom: 15px;
+		}
