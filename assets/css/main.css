@@ -4040,37 +4040,31 @@ input, select, textarea {
 			background: #ddd;
 			color: black;
 		  }
-		  
-		  
-		  .loading svg polyline {
-			fill: none;
-			stroke-width: 3;
-			stroke-linecap: round;
-			stroke-linejoin: round;
+		  #preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000; /* Ensure it's above other content */
 		  }
 		  
-		  .loading svg polyline#back {
-			fill: none;
-			stroke: #ff4d5033;
+		  #loader {
+			border: 4px solid #000000;
+			border-radius: 50%;
+			border-top: 4px solid #ac00f6;
+			width: 50px;
+			height: 50px;
+			animation: spin 5s linear infinite;
 		  }
 		  
-		  .loading svg polyline#front {
-			fill: none;
-			stroke: #ff4d4f;
-			stroke-dasharray: 48, 144;
-			stroke-dashoffset: 192;
-			animation: dash_682 10s linear infinite;
+		  @keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
 		  }
-		  
-		  @keyframes dash_682 {
-			72.5% {
-			  opacity: 0;
-			}
-		  
-			to {
-			  stroke-dashoffset: 0;
-			}
-		  }
-		  
 		  
 		  
