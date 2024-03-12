@@ -5,7 +5,6 @@
 		Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 	-->
 <html>
-
 <head>
 
 	<title>Suzi Mcqueen</title>
@@ -16,7 +15,16 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
-
+<body>
+	<div id="preloader">
+		<div id="loader">
+			<svg width="64px" height="48px">
+				<polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+			  <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+			</svg>
+		</div>
+	  </div>
+	  
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
@@ -339,18 +347,20 @@
 			carousel.addEventListener('mouseleave', startAutoScroll);
 		});
 		</script>
-
-<script>
-	// Get the video
-	var video = document.getElementById("myVideo");
-	</script>
+		<script>
+			window.addEventListener('load', function() {
+			  var preloader = document.getElementById('preloader');
+			  preloader.style.display = 'none';
+			});
+		  </script>
+		  
+</body>
+	
 
 			
 		
 		
 
 
-
-</body>
 
 </html>
