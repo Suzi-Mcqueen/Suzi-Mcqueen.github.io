@@ -218,7 +218,12 @@ input, select, textarea {
 			}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 3em;
+			text-align: center;
+			font-family: "Times New Roman";
+			color: #000000;
+			text-shadow: 0 0 3px #ff0000, 0 0 5px #9500ff;
+
 	}
 
 	h3 {
@@ -3957,7 +3962,7 @@ input, select, textarea {
 		.carousel-prev, .carousel-next {
 			position: absolute;
 			top: 40%;
-			transform: translateY(-50%);
+			transform: translateY(auto);
 			background-color: #5450501b;
 			color: white;
 			border: none;
@@ -4040,31 +4045,8 @@ input, select, textarea {
 			background: #ddd;
 			color: black;
 		  }
-		  #preloader {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #fff;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			z-index: 1000; /* Ensure it's above other content */
-		  }
-		  
-		  #loader {
-			border: 4px solid #000000;
-			border-radius: 50%;
-			border-top: 4px solid #ac00f6;
-			width: 50px;
-			height: 50px;
-			animation: spin 5s linear infinite;
-		  }
-		  
-		  @keyframes spin {
-			0% { transform: rotate(0deg); }
-			100% { transform: rotate(360deg); }
-		  }
-		  
-		  
+
+		  .container {
+			text-align: center; /* Center align the text */
+		}
+		
